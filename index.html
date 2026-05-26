@@ -1,6 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Development Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">📚 SkillHub</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Skill Development</h1>
+        <p>Elevate your abilities and unlock your potential through continuous learning</p>
+        <button class="cta-button">Get Started</button>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <h2>Featured Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Master HTML, CSS, and JavaScript to build stunning web applications</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Create beautiful and intuitive user experiences</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🚀</div>
+          <h3>Full Stack</h3>
+          <p>Build complete applications from frontend to backend</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Get in Touch</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+    </section>
+  </main>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LumiFlow | Interface</title>
@@ -81,6 +138,10 @@
       <span id="year"></span>
     </footer>
   </div>
+
+  <footer class="footer">
+    <p>&copy; 2026 Skill Development Hub. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
