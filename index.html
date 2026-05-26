@@ -1,15 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sample Web App</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LumiFlow | Interface</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="container">
-    <h1>Welcome to the skill development</h1>
-  </main>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">L</span>
+        <div>
+          <strong>LumiFlow</strong>
+          <small>Interface Studio</small>
+        </div>
+      </div>
+      <button class="theme-toggle" id="themeToggle" type="button">Dark Mode</button>
+    </header>
+
+    <main class="page-layout">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <span class="eyebrow">Refined frontend</span>
+          <h1>Design a stunning interface with clean visuals and smooth motion.</h1>
+          <p>Minimal text, bold hierarchy, and a polished card-based layout for a premium web experience.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" id="demoButton" type="button">Preview design</button>
+            <a href="#features" class="button button-secondary">See details</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card visual-card--top">
+            <span>Navigation</span>
+            <div class="visual-strip"></div>
+          </div>
+          <div class="visual-card visual-card--middle">
+            <span>Dashboard</span>
+            <div class="visual-grid">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="visual-card visual-card--bottom">
+            <span>Quick actions</span>
+            <div class="visual-actions">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features-section">
+        <div class="section-heading">
+          <span class="eyebrow">Core experience</span>
+          <h2>Clean structure, intuitive spacing, and gentle animation.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Glass panels</h3>
+            <p>Soft translucent cards keep the focus on content without clutter.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Responsive flow</h3>
+            <p>Layout adjusts elegantly for mobile, tablet, and desktop screens.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Refined motion</h3>
+            <p>Subtle hover effects and transitions enhance the experience.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <span>Built inside <strong>App/web-app</strong></span>
+      <span id="year"></span>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
